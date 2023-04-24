@@ -1,27 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.App {
+    display: flex;
+    flex-direction: column;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.country-select {
+    z-index: 9999999999999999999999;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.my-button:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.vl {
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.my-title {
+    font-family: 'Tilt Prism', cursive !important;
+}
+
+.my-title-course-page {
+    font-family: 'Tilt Prism', cursive;
+    position: relative;
+    font-size: 1.6em;
+}
+
+.accordion-header {
+    background-color: #333333;
+    color: #ffffff;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    font-size: 6em !important;
+}
+
+.custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bems-logo {
+    width: 150px;
+    height: 200px;
+    float: right;
+
+}
+
+.course_page_img {
+    background-image: url("/bemsktcu/src/Images/course_bg_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    grid-gap: 10px; /* Add some space between grid items */
+}
+
+.grid-item {
+    background-color: #f2f2f2; /* Add a background color to grid items */
+    padding: 10px; /* Add some padding to grid items */
+}
+
+
+@media screen and (max-width: 480px) {
+    .sign-up-text {
+        margin-left: 10px !important;
+    }
+
+    .my-title {
+        font-size: 2em !important;
+    }
+
+    .txt-reg-requirement {
+        font-family: 'Tilt Prism', cursive !important;
+        font-size: 1.1em !important;
+    }
+
+    .txt-reg-requirement-2 {
+        font-size: 1.1em !important;
+    }
+
+    .banner-image {
+        height: 100px;
+    }
+
+    .my-title-course-page {
+        font-family: 'Tilt Prism', cursive;
+        font-size: 0.9em;
+        font-weight: 1200 !important;
+    }
+
+    .grid-item strong {
+        font-size: 0.7em;
+        font-weight: 999;
+    }
+
+    .search-bar {
+        width: 100%!important;
+        margin-top: auto;
+    }
+
+    .curriculum-con {
+        margin-top: auto;
+    }
+
+    .BITVs-pc {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .BITVs-mb {
+        display: none;
+    }
+
+
 }
