@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {Container, Form} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.css';
-import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
 import {countryOptions} from "@/components/Countries";
 import {Courses} from "@/components/Courses";
 
