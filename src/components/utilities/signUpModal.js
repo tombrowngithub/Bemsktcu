@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import CountrySelect from 'react-bootstrap-country-select';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {Container, Form} from "react-bootstrap";
