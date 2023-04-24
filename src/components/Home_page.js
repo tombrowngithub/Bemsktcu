@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Router  from "next/router";
 import {Button, Col, Container, Row} from "react-bootstrap";
 import Image from "next/image";
 import world_map from "@/Images/world_map.jpg"
@@ -13,6 +14,11 @@ import SignUpModal from "@/components/utilities/signUpModal";
 
 export default function Home_page() {
     const [SignUpModalShow, setSignUpModalShow] = useState(false);
+    const router = Router
+
+    function EL_ROI_page() {
+        router.push("https://elroilondonuniversity.org/")
+    }
 
     return (
         <div className="tw-relative">
@@ -48,15 +54,17 @@ export default function Home_page() {
                                     More <ChevronRightIcon width={"18px"}/></Button>
                             </Col>
                             <Col className="my-4" xl={4} lg={4} md={12} sm={12}>
-                                <h2 className="tw-text-white">GLOBAL RECOGNITION</h2>
-                                <p className="tw-text-white">We are globally recognized for High-Quality IT Courses and
-                                    Technical Certification
-                                    Online. Our Mission is to make Technology Education and Certification accessible for
-                                    career advancement by providing a Flexible, Affordable and Effective E-Learning
-                                    experience.
+                                <h2 className="tw-text-white">EL ROI LONDON UNIVERSITY</h2>
+                                <p className="tw-text-white">In partnership with EL ROI for certification of all our
+                                    courses.
+                                    El-Roi London University is the Higher education academy of the El-Roi London
+                                    Academy. A private university that received degree-awarding powers from The Kingdom
+                                    of Hawai'i Royal Accreditation Commission (KOHRAC), Honolulu, the USA.
                                 </p>
-                                <Button className="border border-2 border-white rounded-0 d-flex align-items-center">Learn
-                                    More <ChevronRightIcon width={"18px"}/></Button>
+                                <Button onClick={EL_ROI_page}
+                                        className="border border-2 border-white rounded-0 d-flex align-items-center">Learn
+                                    More <ChevronRightIcon width={"18px"}/>
+                                </Button>
                             </Col>
                         </Row>
                     </Container>

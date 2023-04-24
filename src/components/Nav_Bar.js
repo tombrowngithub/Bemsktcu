@@ -37,8 +37,8 @@ export default function NavBar() {
                             <NavDropdown.Item href="#action/3.3">
                                 Visit our promotions
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.4">
-                                For Resellers
+                            <NavDropdown.Item href="https://elroilondonuniversity.org/">
+                                Certification issuer EL ROI UK
                             </NavDropdown.Item>
                         </NavDropdown>
 

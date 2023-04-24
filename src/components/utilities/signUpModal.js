@@ -6,13 +6,13 @@ import {countryOptions} from "@/components/Countries";
 import {Courses} from "@/components/Courses";
 
 
-
 export default function signUpModal(props) {
     const [loading, setLoading] = useState(false)
     const [loginFormData, setLoginFormData] = useState({
         email: "",
         password: ""
     });
+
 
     function handleChange(e) {
         setLoginFormData(prevState => {
