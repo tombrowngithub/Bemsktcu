@@ -95,6 +95,13 @@
     margin-top: 5rem;
     transition: 0.5s;
 }
+.tw-bg-con{
+    -webkit-border-bottom-right-radius: 1rem;
+    -webkit-border-bottom-left-radius: 1rem;
+}
+
+
+
 
 
 @media screen and (max-width: 480px) {

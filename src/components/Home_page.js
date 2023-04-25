@@ -28,7 +28,7 @@ export default function Home_page() {
                     src={BKTC_logo}
                     alt="Logo"
                     className=" img-fluid d-block mx-auto mx-md-0 my-2 my-md-0 tw-w-[250px] tw-sm:tw-w-[100px] tw-absolute tw-top-0 tw-right-0"/>
-                <div className="tw-bg-[#179bd7]">
+                <div className="tw-bg-[#179bd7] tw-bg-con">
                     <Container>
                         <Row className="justify-content-center">
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
@@ -69,6 +69,12 @@ export default function Home_page() {
                         </Row>
                     </Container>
                 </div>
+
+
+
+                {/*New section*/}
+
+
                 <div className="position-relative landing-page">
                     <Container className="tw-absolute tw-top-0 tw-left-0 tw-right-0 my-2 ">
                         <h2 className='tw-text-[#179bd7] tw-text-center'>
@@ -102,7 +108,7 @@ export default function Home_page() {
                                 <div className="w-100 position-relative tw-bg-gray-600/90 card-drop-shadow">
                                     <Image className=" w-100 tw-h-[240px] tw-object-cover tw-mix-blend-overlay"
                                            src={pic2} alt="image"/>
-                                    <p className="mx-2 position-absolute top-0 tw-font-extrabold text-white">
+                                    <p className="mx-2 position-absolute bottom-0 tw-font-extrabold text-white">
                                         We offer high quality online courses delivered industry professionals and
                                         educators, to give you the best learning experience during your study.
                                     </p>
