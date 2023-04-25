@@ -3,7 +3,7 @@ import Nav_Bar from "@/components/Nav_Bar";
 import Banner from "@/Images/courses_banner.jpg"
 import course_bg_img from "../Images/course_bg_img.jpg"
 import Image from "next/image";
-import {Container, Table, Form, InputGroup} from "react-bootstrap";
+import {Container, Table} from "react-bootstrap";
 import {Courses} from "@/components/Courses";
 
 
@@ -40,10 +40,10 @@ function CoursesPage(props) {
                 </div>
             </Container>
 
-            <div className=" position-relative top-0 bottom-100">
-                <Container>
+            <div className=" position-relative top-0 bottom-100 ">
+                <Container >
                     {Courses.map((course, index) => (
-                        <Table className="mb-5 tw-shadow-lg" striped bordered hover size="lg">
+                        <Table key={index} className="mb-5 tw-shadow-lg curriculum-con" striped bordered hover size="lg">
                             <thead>
                             <tr>
                                 <th className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">{course.name}</th>
@@ -51,7 +51,7 @@ function CoursesPage(props) {
                             </thead>
                             <tbody>
                             {Object.entries(course.values).map(([key, value]) => (
-                                <tr>
+                                <tr key={key}>
                                     <td className="text-white">{value}</td>
                                 </tr>
                             ))}
@@ -59,7 +59,6 @@ function CoursesPage(props) {
                         </Table>
                     ))}
                 </Container>
-
             </div>
 
         </div>

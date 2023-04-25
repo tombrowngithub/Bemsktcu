@@ -69,8 +69,8 @@ export default function signUpModal(props) {
                     <Form.Group className="mb-4 !tw-shadow-lg">
                         <Form.Label>Choose a course*</Form.Label>
                         <Form.Select aria-label="Default select example">
-                            {Courses.map((option) => (
-                                <option value={option.name}>{option.name}</option>
+                            {Courses.map((option,index) => (
+                                <option key={index} value={option.name}>{option.name}</option>
                             ))}
                         </Form.Select>
                     </Form.Group>

@@ -6,9 +6,9 @@ function CertificationPrograms(props) {
     return (
         <div className="tw-bg-[#9a9dce]">
             <Nav_Bar/>
-            <div className="tw-bg-[#212327] text-white">
-                <h2 className="text-center tw-shadow-lg txt-reg-requirement">REGISTRATION REQUIREMENTS</h2>
-                <Container>
+            <Container className="tw-bg-[#212327] text-white">
+                <h2 className="text-center tw-shadow-lg tw-font-extrabold txt-reg-requirement">REGISTRATION REQUIREMENTS</h2>
+                <Container className='grid-con-bg'>
                     <h4 className="text-start txt-reg-requirement-2">Passport Photograph</h4>
                     <h4 className="text-start txt-reg-requirement-2">Registration/ID Card fee is part of the training
                         Tuition for DIPLOMA
@@ -20,11 +20,11 @@ function CertificationPrograms(props) {
                     <h4 className="text-start txt-reg-requirement-2">Course Materials = ₦22, 500 (professional
                         programs!</h4>
                 </Container>
-            </div>
+            </Container>
 
-            <Container className="mt-5">
+            <Container className="mt-2">
                 <h5></h5>
-                <div className="mb-5 tw-shadow-lg">
+                <div className="mb-5 tw-shadow-lg grid-con-bg">
                     <Container>
                         <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
                             COMPUTER DIPLOMA PROGRAMS </h5>
@@ -32,36 +32,181 @@ function CertificationPrograms(props) {
 
                     <div className="grid-container">
                         <div className="grid-item">
-                            <strong className="tw-font-bold text-center">Computer Appreciation</strong>
-                            <br/>
-                            N/A
-                            <br/>
-                            N/A
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Computer Appreciation</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
 
                         <div className="grid-item">
-                            <strong>Introduction to the Internet</strong>
-                            <br/>
-                            N/A
-                            <br/>
-                            N/A
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Introduction to the Internet</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Microsoft Office Word</strong><br/>N/A<br/>N/A</div>
-                        <div className="grid-item"><strong>Computer Engineering (in line with Comptia N+)</strong><br/>6
-                            Weeks<br/>₦30,000
+                        <div className="grid-item"><h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft Office Word</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Microsoft Office Excel</strong><br/>N/A<br/>N/A
+
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft Office Excel</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Microsoft office Power Point</strong><br/>N/A <br/>N/A</div>
-                        <div className="grid-item"><strong>Microsoft office Access</strong><br/>N/A <br/>N/A</div>
-                        <div className="grid-item"><strong>Microsoft office Publisher</strong><br/>N/A <br/>N/A</div>
-                        <div className="grid-item"><strong>Corel Draw</strong><br/>N/A <br/>N/A
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office Power
+                            Point</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office Access</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office
+                            Publisher</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Corel Draw</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">N/A</td>
+                                        <td className="text-center">N/A</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
                     </div>
                 </div>
 
-                <div className="mb-5 tw-shadow-lg">
-                    <h5 className="text-center">WE PROVIDE THE MOST INNOVATIVE SKILLS NEEDED, TO GET YOU YOUR GOALS</h5>
+                <div className="mb-5 tw-shadow-lg grid-con-bg">
+                    <p className="text-center">WE PROVIDE THE MOST INNOVATIVE SKILLS NEEDED, TO GET YOU YOUR GOALS</p>
                     <Container>
                         <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
                             PROFESSIONAL CERTIFICATION PROGRAM (Business/Accountancy/Statistics)
@@ -70,119 +215,619 @@ function CertificationPrograms(props) {
 
                     <div className="grid-container">
                         <div className="grid-item">
-                            <strong className="tw-font-bold text-center">Peachtree A counting</strong>
-                            <br/>
-                            6 Weeks
-                            <br/>
-                            ₦35,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Peachtree A counting</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦35,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
 
                         <div className="grid-item">
-                            <strong>Quick Book</strong>
-                            <br/>
-                            6 Weeks
-                            <br/>
-                            ₦30,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Quick Book</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>SPSS</strong><br/>6 Weeks<br/>₦45,000</div>
-                        <div className="grid-item"><strong>Advance Microsoft Office Excel</strong><br/>1 Month<br/>₦3,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">SPSS</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦45,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Advance Microsoft Office Access</strong><br/>1 Month<br/>₦15.000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Advance Microsoft Office
+                            Excel</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">1 Months</td>
+                                        <td className="text-center">₦3,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Advanced Microsoft Office PowerPoint
-                            Presentation</strong><br/>1 Month <br/>₦20,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Advance Microsoft Office
+                            Access</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">1 Month</td>
+                                        <td className="text-center">₦15,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Advanced Microsoft Office
+                            PowerPoint
+                            Presentation</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">1 Months</td>
+                                        <td className="text-center">₦20,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
                     </div>
                 </div>
 
 
-                <div className="mb-5 tw-shadow-lg">
-                    <h5 className="text-center">CERTIFICATION PROGRAM (IT TECHNICIAN)</h5>
+                <div className="mb-5 tw-shadow-lg grid-con-bg">
+                    <p className="text-center">CERTIFICATION PROGRAM (IT TECHNICIAN)</p>
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-font-bold tw-text-blue-900 glow">
                             PROFESSIONAL CERTIFICATION PROGRAM (Business/Accountancy/Statistics)
                         </h5>
                     </Container>
 
                     <div className="grid-container">
                         <div className="grid-item">
-                            <strong className="tw-font-bold text-center">Ciso (CCNA Training) + Course
-                                Materials</strong>
-                            <br/>
-                            2 months
-                            <br/>
-                            ₦70,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Ciso (CCNA Training) + Course
+                                Materials</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦70,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
 
                         <div className="grid-item">
-                            <strong>Networking (in line with Comptia N+)</strong>
-                            <br/>
-                            6 Weeks
-                            <br/>
-                            ₦30,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Networking (in line with Comptia N+)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Networking +(cyber care management and
-                            administration)</strong><br/>2 Months<br/>₦35,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Networking +(cyber care
+                            management and
+                            administration)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦35,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Computer Engineering (in line with Comptia N+)</strong><br/>6
-                            Weeks<br/>₦30,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Computer Engineering (in
+                            line with Comptia N+)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Networking +(cyber care management and
-                            administration)</strong><br/>2 Month<br/>₦35.000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Networking +(cyber care
+                            management and
+                            administration)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦35,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Computer Engineering (in line with Comptia N+)</strong><br/>6
-                            Weeks <br/>₦30,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Computer Engineering (in
+                            line with Comptia N+)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Structured Cable</strong><br/>6 Weeks <br/>₦50,000</div>
-                        <div className="grid-item"><strong>CCTV/IP Camera Installation Training</strong><br/>8
-                            Weeks <br/>₦100,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Structured Cable</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦50,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>PABX & Intercom System Training</strong><br/>8 Weeks <br/>₦50,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">CCTV/IP Camera Installation
+                            Training</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">8 Weeks</td>
+                                        <td className="text-center">₦100,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>VSAT FIELD Engineering</strong><br/>3 Weeks <br/>₦80,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">PABX & Intercom System
+                            Training</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">8 Weeks</td>
+                                        <td className="text-center">₦50,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">VSAT FIELD Engineering</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">3 Weeks</td>
+                                        <td className="text-center">₦80,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
                     </div>
                 </div>
 
 
-                <div className="mb-5 tw-shadow-lg">
+                <div className="mb-5 tw-shadow-lg !tw-rounded-1 grid-con-bg">
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-font-bold tw-text-blue-900 glow">
                             PROFESSIONAL CERTIFICATION PROGRAM (PROGRAMMING) </h5>
                     </Container>
 
                     <div className="grid-container">
                         <div className="grid-item">
-                            <strong className="tw-font-bold text-center">JAVA</strong>
-                            <br/>
-                            2 months
-                            <br/>
-                            ₦50,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">JAVA</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦50,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+
                         </div>
 
                         <div className="grid-item">
-                            <strong>PHP</strong>
-                            <br/>
-                            2 Months
-                            <br/>
-                            ₦20,000
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">PHP</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦20,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>SQL</strong><br/>2 Months<br/>₦20,000</div>
-                        <div className="grid-item"><strong>Computer Engineering (in line with Comptia N+)</strong><br/>6
-                            Weeks<br/>₦30,000
+                        <div className="grid-item"><h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">SQL</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦20,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Networking +(cyber care management and
-                            administration)</strong><br/>2 Month<br/>₦35.000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Computer Engineering (in
+                            line with Comptia N+)
+                        </h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Vsual Basic</strong><br/>6 Weeks <br/>₦20,000</div>
-                        <div className="grid-item"><strong>Qbasic</strong><br/>6 Weeks <br/>₦15,000</div>
-                        <div className="grid-item"><strong>Assembly Language</strong><br/>2 Months <br/>₦15,000</div>
-                        <div className="grid-item"><strong>Visual C++ (GUI and CONSOLE)</strong><br/>2 Months <br/>₦50,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Networking +(cyber care
+                            management and
+                            administration)
+                        </h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦35,000</td>
+                                    </tr>
+                                    </tbody>
+                                </Table>
+                            </Container>                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Vsual Basic</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦20,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Android Programming/Application Development</strong><br/>2
-                            Months <br/>₦50,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Qbasic</h6>
+
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">6 Weeks</td>
+                                        <td className="text-center">₦15,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
-                        <div className="grid-item"><strong>Oracle & Scripting Language</strong><br/>8 Weeks <br/>₦30,000
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Assembly Language</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦15,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Visual C++ (GUI and
+                            CONSOLE)</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦50,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Android
+                            Programming/Application Development</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">2 Months</td>
+                                        <td className="text-center">₦50,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
+                        </div>
+                        <div className="grid-item">
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Oracle & Scripting
+                            Language</h6>
+                            <Container>
+                                <Table className="border-primary border-2" striped bordered hover size="sm">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-center">Duration</th>
+                                        <th className="text-center">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td className="text-center">8 Weeks</td>
+                                        <td className="text-center">₦30,000</td>
+                                    </tr>
+                                    </tbody>
+
+                                </Table>
+                            </Container>
                         </div>
 
                     </div>

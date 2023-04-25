@@ -7,11 +7,9 @@
 .App {
     display: flex;
     flex-direction: column;
-
 }
-
-.country-select {
-    z-index: 9999999999999999999999;
+.my-button{
+    background: black!important;
 }
 
 .my-button:hover {
@@ -67,8 +65,35 @@
 }
 
 .grid-item {
-    background-color: #f2f2f2; /* Add a background color to grid items */
     padding: 10px; /* Add some padding to grid items */
+    background: linear-gradient(45deg, #2196f3, #b8f7ff);
+}
+
+.grid-con-bg {
+    background: linear-gradient(45deg, #2196f3, #b8f7ff);
+    -webkit-border-top-right-radius: 1rem;
+    -webkit-border-top-left-radius: 1rem;
+}
+
+.my-gradient-bg {
+    background: linear-gradient(45deg, #2196f3, #b8f7ff);
+    -webkit-border-top-right-radius: 1rem;
+    -webkit-border-top-left-radius: 1rem;
+}
+
+.landing-page{
+    background: linear-gradient(45deg, #333333, #1fef)!important;
+}
+
+.card-drop-shadow:hover{
+    box-shadow: 10px 5px 5px #5e5e5e;
+    transition: 0.3s;
+    margin-top: 0.3rem;
+}
+
+.card-drop-shadow p:hover{
+    margin-top: 5rem;
+    transition: 0.5s;
 }
 
 
@@ -87,7 +112,8 @@
     }
 
     .txt-reg-requirement-2 {
-        font-size: 1.1em !important;
+        font-size: 0.85em !important;
+        font-family: "Roboto Light", fantasy !important;
     }
 
     .banner-image {
@@ -106,16 +132,41 @@
     }
 
     .search-bar {
-        width: 100%!important;
+        width: 100% !important;
         margin-top: auto;
     }
 
     .curriculum-con {
         margin-top: auto;
+        background: linear-gradient(45deg, #2196f3, #b8f7ff);
     }
 
     .BITVs-pc {
         display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; /* One column in mobile view */
+        grid-gap: 5px; /* Add some space between grid items */
+
+    }
+
+    .grid-item {
+        padding: 5px; /* Add some padding to grid items */
+        background: linear-gradient(45deg, #2196f3, #b8f7ff);
+    }
+
+    .grid-item strong {
+        text-align: center;
+    }
+
+    .nav-bar-gradient-bg{
+
+    }
+
+    .my-apply-btn{
+        width: 100%;
     }
 
 }
@@ -125,5 +176,12 @@
         display: none;
     }
 
+    .txt-reg-requirement-2 {
+        font-size: 1em !important;
+    }
 
+    .curriculum-con {
+        background: linear-gradient(45deg, #2196f3, #b8f7ff);
+        color: white;
+    }
 }

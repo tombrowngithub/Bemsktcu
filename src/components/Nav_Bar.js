@@ -11,7 +11,7 @@ export default function NavBar() {
     const [LoginModalShow, setLoginModalShow] = useState(false);
     const [SignUpModalShow, setSignUpModalShow] = useState(false);
     return (
-        <Navbar className="tw-bg-[#9a9dce] " expand="lg" variant="dark">
+        <Navbar className="tw-bg-[#9a9dce] nav-bar-gradient-bg" expand="lg" variant="dark">
             <Container className="ms-0">
                 <Navbar.Brand className=" tw-font-bold">
                     <Link className="text-decoration-none BITVs-pc my-title" href="/">
@@ -69,7 +69,7 @@ export default function NavBar() {
                             <NavDropdown.Divider/>
                             <NavDropdown.Item >
                                 <Link className="text-decoration-none text-white" href="/certification_programs">
-                                    VIEW OUR CERTIFICATION PROGRAM
+                                    View all our certification program
                                 </Link>
                             </NavDropdown.Item>
                         </NavDropdown>

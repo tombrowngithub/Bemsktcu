@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Router  from "next/router";
+import Router from "next/router";
 import {Button, Col, Container, Row} from "react-bootstrap";
 import Image from "next/image";
 import world_map from "@/Images/world_map.jpg"
@@ -69,18 +69,27 @@ export default function Home_page() {
                         </Row>
                     </Container>
                 </div>
-                <div className="position-absolute">
-                    <Image className="tw-h-screen position-fix bottom-0 " src={world_map} alt="image"/>
-                    <Container className="tw-absolute tw-top-0 tw-left-0 tw-right-0 my-5">
-                        <h2 className='tw-text-white tw-text-center'>ONLINE PROFESSIONAL CERTIFICATE COURSE
-                            PROGRAMS</h2>
+                <div className="position-relative landing-page">
+                    <Container className="tw-absolute tw-top-0 tw-left-0 tw-right-0 my-2 ">
+                        <h2 className='tw-text-[#179bd7] tw-text-center'>
+                            ONLINE PROFESSIONAL CERTIFICATE COURSE PROGRAMS
+                        </h2>
                     </Container>
                     <div className="tw-absolute tw-top-20 tw-left-0 tw-right-0 tw-mx-10">
                         <Row>
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
-                                <Image className="w-100 tw-h-[240px]" src={pic1} alt="image"/>
-                                <h5 className="d-flex text-white tw-my-3"><AcademicCapIcon className="tw-w-5"/>DIPLOMA
-                                    PROGRAMS</h5>
+                                <div className="w-100 position-relative tw-bg-gray-600/80 card-drop-shadow">
+                                    <Image className="card-text w-100 tw-h-[240px] tw-object-cover tw-mix-blend-overlay"
+                                           src={pic1} alt="image"/>
+                                    <p className="px-2 position-absolute bottom-0 tw-font-extrabold text-white ">
+                                        The need for educational flexibility is on the rise. Our Online course are
+                                        self-paced
+                                        and flexible tailored to meet individual specific career needs.
+                                    </p>
+                                </div>
+
+                                <h6 className="d-flex tw-text-[#179bd7] tw-my-3"><AcademicCapIcon className="tw-w-5"/>DIPLOMA
+                                    PROGRAMS</h6>
                                 <Button
                                     variant="outline"
                                     className="border py-2 text-white rounded-0 d-flex align-items-center my-button">
@@ -90,9 +99,17 @@ export default function Home_page() {
                             </Col>
 
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
-                                <Image className="w-100 tw-h-[240px]" src={pic2} alt="image"/>
-                                <h5 className="d-flex text-white tw-my-3"><AcademicCapIcon className="tw-w-5"/> ADVANCED
-                                    DIPLOMA PROGRAMS</h5>
+                                <div className="w-100 position-relative tw-bg-gray-600/90 card-drop-shadow">
+                                    <Image className=" w-100 tw-h-[240px] tw-object-cover tw-mix-blend-overlay"
+                                           src={pic2} alt="image"/>
+                                    <p className="mx-2 position-absolute top-0 tw-font-extrabold text-white">
+                                        We offer high quality online courses delivered industry professionals and
+                                        educators, to give you the best learning experience during your study.
+                                    </p>
+                                </div>
+                                <h6 className="d-flex tw-text-[#179bd7] tw-my-3"><AcademicCapIcon
+                                    className="tw-w-5"/> ADVANCED
+                                    DIPLOMA PROGRAMS</h6>
                                 <Button
                                     variant="outline"
                                     className="border py-2 text-white rounded-0 d-flex align-items-center my-button">
@@ -102,9 +119,16 @@ export default function Home_page() {
                             </Col>
 
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
-                                <Image className="w-100 tw-h-[240px]" src={pic3} alt="image"/>
-                                <h5 className="d-flex text-white tw-my-3"><AcademicCapIcon className="tw-w-5"/>MASTER
-                                    CLASS PROGRAMS</h5>
+                                <div className="w-100 position-relative tw-bg-gray-600/80 card-drop-shadow">
+                                    <Image className=" w-100 tw-h-[240px] tw-object-cover tw-mix-blend-overlay"
+                                           src={pic3} alt="image"/>
+                                    <p className="mx-2 position-absolute top-0 tw-font-extrabold text-white">
+                                        Choose a course, study at your own speed and Graduate over the internet.
+                                        Students have the opportunity to study from anywhere, at anytime.
+                                    </p>
+                                </div>
+                                <h6 className="d-flex tw-text-[#179bd7] tw-my-3"><AcademicCapIcon className="tw-w-5"/>MASTER
+                                    CLASS PROGRAMS</h6>
                                 <Button
                                     variant="outline"
                                     className="border py-2 text-white rounded-0 d-flex align-items-center my-button">
@@ -114,12 +138,15 @@ export default function Home_page() {
                             </Col>
                         </Row>
 
-                        <Container className="d-flex justify-content-center ">
-                            <Button
-                                onClick={() => setSignUpModalShow(true)}
-                                className="w-md-25 w-25 rounded-1 py-3 px-3 my-5">
-                                APPLY NOW!
-                            </Button>
+                        <Container className="d-flex flex-column justify-content-center align-items-center ">
+                            <h3 className="text-center tw-text-[#179bd7]">WHAT ARE YOU WAITING FOR!</h3>
+                            <div className="">
+                                <Button
+                                    onClick={() => setSignUpModalShow(true)}
+                                    className=" rounded-1 py-2 px-3 my-1 my-apply-btn">
+                                    APPLY NOW!
+                                </Button>
+                            </div>
                         </Container>
                     </div>
                 </div>
