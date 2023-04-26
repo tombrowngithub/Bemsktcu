@@ -115,8 +115,8 @@ export default function signUpModal(props) {
                     <Form.Group className="mb-4 !tw-shadow-lg">
                         <Form.Label>Country*</Form.Label>
                         <Form.Select aria-label="Default select example">
-                            {countryOptions.map((option) => (
-                                <option value={option.value}>{option.label}</option>
+                            {countryOptions.map((option, index) => (
+                                <option key={index} value={option.value}>{option.label}</option>
                             ))}
                         </Form.Select>
                     </Form.Group>

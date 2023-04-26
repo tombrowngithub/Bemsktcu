@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,8 +9,9 @@
     display: flex;
     flex-direction: column;
 }
-.my-button{
-    background: black!important;
+
+.my-button {
+    background: black !important;
 }
 
 .my-button:hover {
@@ -24,6 +26,7 @@
 
 .my-title {
     font-family: 'Tilt Prism', cursive !important;
+    color: white;
 }
 
 .my-title-course-page {
@@ -35,6 +38,7 @@
 .accordion-header {
     background-color: #333333;
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     overflow-wrap: break-word !important;
     word-wrap: break-word !important;
     font-size: 6em !important;
@@ -52,10 +56,7 @@
 }
 
 .course_page_img {
-    background-image: url("/bemsktcu/src/Images/course_bg_img.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(300deg,#5f628a,#141517, #5f628a,#343656,#5f628a);
 }
 
 .grid-container {
@@ -81,29 +82,43 @@
     -webkit-border-top-left-radius: 1rem;
 }
 
-.landing-page{
-    background: linear-gradient(45deg, #333333, #1fef)!important;
+.nav-bar-gradient-bg {
+    background: linear-gradient(300deg, #141517, #343656, #5f628a,#5f628a,#5f628a);
 }
 
-.card-drop-shadow:hover{
+.landing-page {
+    background: linear-gradient(45deg, #333333, #1fef) !important;
+}
+
+.card-drop-shadow:hover {
     box-shadow: 10px 5px 5px #5e5e5e;
     transition: 0.3s;
     margin-top: 0.3rem;
 }
 
-.card-drop-shadow p:hover{
-    margin-top: 5rem;
+.card-drop-shadow p:hover {
+    margin-bottom: 4.5rem;
     transition: 0.5s;
 }
-.tw-bg-con{
-    -webkit-border-bottom-right-radius: 1rem;
-    -webkit-border-bottom-left-radius: 1rem;
+
+.tw-bg-con {
+    -webkit-border-bottom-right-radius: 2.5rem;
+    -webkit-border-bottom-left-radius: 2.5rem;
 }
 
+.bg-footer-radius {
+    -webkit-border-top-right-radius: 2.5rem;
+    -webkit-border-top-left-radius: 2.5rem;
+}
 
+.footer-bg {
+    background: linear-gradient(45deg, #2b2f3a, #0c1728, #141517);
+    font-family: 'Poppins', sans-serif;
+}
 
-
-
+.poppings-font{
+    font-family: 'Poppins', sans-serif;
+}
 @media screen and (max-width: 480px) {
     .sign-up-text {
         margin-left: 10px !important;
@@ -168,12 +183,18 @@
         text-align: center;
     }
 
-    .nav-bar-gradient-bg{
-
+    .my-apply-btn {
+        width: 100%;
     }
 
-    .my-apply-btn{
-        width: 100%;
+    .tw-mx-3-con {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        float: right;
+    }
+
+    .BKTC_logo {
+        width: 18rem;
     }
 
 }
@@ -190,5 +211,10 @@
     .curriculum-con {
         background: linear-gradient(45deg, #2196f3, #b8f7ff);
         color: white;
+    }
+
+    .tw-mx-3-con {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }

@@ -6,10 +6,11 @@ import world_map from "@/Images/world_map.jpg"
 import pic1 from "@/Images/pic1.jpg"
 import pic2 from "@/Images/pic2.jpg"
 import pic3 from "@/Images/pic3.jpg"
-import BKTC_logo from "@/Images/BKTC_logo.png"
+import BKTC_logo from "@/Images/BITVs_logo.png"
 import {ChevronRightIcon, AcademicCapIcon} from '@heroicons/react/24/solid'
 import SlideImage from "@/components/utilities/slideImage/SlideImage";
 import SignUpModal from "@/components/utilities/signUpModal";
+import Footer from "@/components/Footer";
 
 
 export default function Home_page() {
@@ -21,16 +22,30 @@ export default function Home_page() {
     }
 
     return (
-        <div className="tw-relative">
-            <div className="tw-absolute">
+        <div className="poppings-font">
+            <div className="tw-absolute ">
                 <SlideImage/>
                 <Image
                     src={BKTC_logo}
                     alt="Logo"
-                    className=" img-fluid d-block mx-auto mx-md-0 my-2 my-md-0 tw-w-[250px] tw-sm:tw-w-[100px] tw-absolute tw-top-0 tw-right-0"/>
-                <div className="tw-bg-[#179bd7] tw-bg-con">
+                    className=" mx-auto mx-md-0 my-2 my-md-0 tw-w-[20rem] tw-absolute tw-top-0 tw-right-0 BKTC_logo"/>
+                <div className="tw-bg-[#179bd7] tw-bg-con ">
                     <Container>
                         <Row className="justify-content-center">
+                            <Col className="my-4" xl={4} lg={4} md={12} sm={12}>
+                                <h2 className="tw-text-white">EL ROI LONDON UNIVERSITY</h2>
+                                <p className="tw-text-white">In partnership with EL ROI for certification of all our
+                                    courses.
+                                    El-Roi London University is the Higher education academy of the El-Roi London
+                                    Academy. A private university that received degree-awarding powers from The Kingdom
+                                    of Hawai'i Royal Accreditation Commission (KOHRAC), Honolulu, the USA.
+                                </p>
+                                <Button onClick={EL_ROI_page}
+                                        className="border border-2 border-white rounded-0 d-flex align-items-center">Learn
+                                    More <ChevronRightIcon width={"18px"}/>
+                                </Button>
+                            </Col>
+
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
                                 <h2 className="tw-text-white">AWARD WINNING</h2>
                                 <p className="tw-text-white">Bems International Institute Of Technology™ has been
@@ -53,19 +68,6 @@ export default function Home_page() {
                                 <Button className="border border-2 border-white rounded-0 d-flex align-items-center">Learn
                                     More <ChevronRightIcon width={"18px"}/></Button>
                             </Col>
-                            <Col className="my-4" xl={4} lg={4} md={12} sm={12}>
-                                <h2 className="tw-text-white">EL ROI LONDON UNIVERSITY</h2>
-                                <p className="tw-text-white">In partnership with EL ROI for certification of all our
-                                    courses.
-                                    El-Roi London University is the Higher education academy of the El-Roi London
-                                    Academy. A private university that received degree-awarding powers from The Kingdom
-                                    of Hawai'i Royal Accreditation Commission (KOHRAC), Honolulu, the USA.
-                                </p>
-                                <Button onClick={EL_ROI_page}
-                                        className="border border-2 border-white rounded-0 d-flex align-items-center">Learn
-                                    More <ChevronRightIcon width={"18px"}/>
-                                </Button>
-                            </Col>
                         </Row>
                     </Container>
                 </div>
@@ -81,7 +83,7 @@ export default function Home_page() {
                             ONLINE PROFESSIONAL CERTIFICATE COURSE PROGRAMS
                         </h2>
                     </Container>
-                    <div className="tw-absolute tw-top-20 tw-left-0 tw-right-0 tw-mx-10">
+                    <div className="tw-absolute tw-top-20 tw-left-1 tw-right-1 tw-mx-3-con">
                         <Row>
                             <Col className="my-4" xl={4} lg={4} md={6} sm={12}>
                                 <div className="w-100 position-relative tw-bg-gray-600/80 card-drop-shadow">
@@ -128,7 +130,7 @@ export default function Home_page() {
                                 <div className="w-100 position-relative tw-bg-gray-600/80 card-drop-shadow">
                                     <Image className=" w-100 tw-h-[240px] tw-object-cover tw-mix-blend-overlay"
                                            src={pic3} alt="image"/>
-                                    <p className="mx-2 position-absolute top-0 tw-font-extrabold text-white">
+                                    <p className="mx-2 position-absolute bottom-0 tw-font-extrabold text-white">
                                         Choose a course, study at your own speed and Graduate over the internet.
                                         Students have the opportunity to study from anywhere, at anytime.
                                     </p>
@@ -154,15 +156,18 @@ export default function Home_page() {
                                 </Button>
                             </div>
                         </Container>
+                        <Footer/>
                     </div>
                 </div>
             </div>
+
 
             {/*SignUpModal*/}
             <SignUpModal
                 show={SignUpModalShow}
                 onHide={() => setSignUpModalShow(false)}
             />
+
         </div>
     );
 }

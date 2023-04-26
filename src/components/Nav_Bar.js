@@ -5,21 +5,29 @@ import LoginModal from "@/components/utilities/LoginModal";
 import SignUpModal from "@/components/utilities/signUpModal";
 import AllCourses from "@/components/utilities/All_courses";
 import {useState} from "react";
+import BKTC_logo from "@/Images/BITVs_logo.png";
+import Image from "next/image";
 
 
 export default function NavBar() {
     const [LoginModalShow, setLoginModalShow] = useState(false);
     const [SignUpModalShow, setSignUpModalShow] = useState(false);
     return (
-        <Navbar className="tw-bg-[#9a9dce] nav-bar-gradient-bg" expand="lg" variant="dark">
+        <Navbar className="nav-bar-gradient-bg" expand="lg" variant="dark">
             <Container className="ms-0">
                 <Navbar.Brand className=" tw-font-bold">
                     <Link className="text-decoration-none BITVs-pc my-title" href="/">
                         Bems Institute of Technology and Vocational studies
                     </Link>
 
-                    <Link className="text-decoration-none BITVs-mb" href="/">
-                        BITVs
+                    <Link className="text-decoration-none text-white BITVs-mb" href="/">
+                        <div className="d-flex align-items-center border-primary border-2">
+                            BITVs
+                            <Image
+                                src={BKTC_logo}
+                                alt="Logo"
+                                className="tw-w-[7rem]"/>
+                        </div>
                     </Link>
                     </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -77,7 +85,7 @@ export default function NavBar() {
                         <div className="d-flex flex-col md:flex-row md:items-center !tw-ml-40">
                             <div className="vl d-none d-md-block"></div>
                             <Nav.Link
-                                className=" !tw-text-purple-900 !tw-font-bold d-flex align-items-center"
+                                className=" !tw-text-white !tw-font-bold d-flex align-items-center"
                                 onClick={() => setLoginModalShow(true)}
                             >
                                 <ArrowRightOnRectangleIcon width={"18px"}/>
@@ -88,7 +96,7 @@ export default function NavBar() {
 
                             <Nav.Link
                                 onClick={() => setSignUpModalShow(true)}
-                                className="!tw-text-purple-900 !tw-font-bold sign-up-text"
+                                className="!tw-text-white !tw-font-bold sign-up-text"
                             >
                                 Apply!
                             </Nav.Link>

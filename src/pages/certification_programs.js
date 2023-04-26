@@ -4,10 +4,10 @@ import Nav_Bar from "@/components/Nav_Bar";
 
 function CertificationPrograms(props) {
     return (
-        <div className="tw-bg-[#9a9dce]">
+        <div className="tw-bg-[#9a9dce] course_page_img">
             <Nav_Bar/>
-            <Container className="tw-bg-[#212327] text-white">
-                <h2 className="text-center tw-shadow-lg tw-font-extrabold txt-reg-requirement">REGISTRATION REQUIREMENTS</h2>
+            <Container className="tw-bg-[#212327] text-white poppings-font">
+                <h4 className="tw-pt-[3rem] text-center tw-shadow-lg tw-font-extrabold txt-reg-requirement">REGISTRATION REQUIREMENTS</h4>
                 <Container className='grid-con-bg'>
                     <h4 className="text-start txt-reg-requirement-2">Passport Photograph</h4>
                     <h4 className="text-start txt-reg-requirement-2">Registration/ID Card fee is part of the training
@@ -22,7 +22,7 @@ function CertificationPrograms(props) {
                 </Container>
             </Container>
 
-            <Container className="mt-2">
+            <Container className="mt-2 poppings-font">
                 <h5></h5>
                 <div className="mb-5 tw-shadow-lg grid-con-bg">
                     <Container>

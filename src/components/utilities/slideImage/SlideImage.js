@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/24/solid'
-
 import slideImage5 from "@/Images/slideImage5.jpg"
 import slideImage6 from "@/Images/slideImage6.jpg"
 import slideImage7 from "@/Images/slideImage7.jpg"
@@ -108,7 +107,7 @@ export default function SlideImage() {
 
             </Container>
 
-            <div className="position-absolute tw-top-1/4 ms-5 ">
+            <div className="position-absolute tw-top-1/4 ms-5 mt-3">
                 <Button className="tw-h-[45px]" onClick={Back} variant="outline-dark "><ChevronLeftIcon width={"18px"}/></Button>
                 <Button className="tw-h-[45px]" onClick={Next} variant="outline-dark tw-ms-3"><ChevronRightIcon width={"18px"}/></Button>
             </div>

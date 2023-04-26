@@ -9,11 +9,11 @@ import {Courses} from "@/components/Courses";
 
 function CoursesPage(props) {
     return (
-        <div className="tw-bg-[#9a9dce] course_page_img">
+        <div className="course_page_img poppings-font">
             <Nav_Bar/>
             <div>
                 <Image
-                    className="banner-image position-relative"
+                    className="banner-image position-relative tw-object-cover tw-mix-blend-overlay"
                     src={Banner}
                     alt="Banner"/>
 
@@ -30,7 +30,7 @@ function CoursesPage(props) {
                 </Container>
             </div>
 
-            <Container className="tw-mt-[60px] curriculum-con">
+            <Container className="tw-mt-[60px] curriculum-con tw-rounded-2xl">
                 <div className='tw-shadow-lg'>
                     <h3 className="text-center  my-title-course-page !tw-text-purple-950 tw-font-bold">
                         BEMS INSTITUTE OF TECHNOLOGY AND VOCATIONAL STUDIES.
