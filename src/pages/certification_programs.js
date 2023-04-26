@@ -4,11 +4,11 @@ import Nav_Bar from "@/components/Nav_Bar";
 
 function CertificationPrograms(props) {
     return (
-        <div className="tw-bg-[#9a9dce] course_page_img">
+        <div className="">
             <Nav_Bar/>
-            <Container className="tw-bg-[#212327] text-white poppings-font">
+            <Container className="tw-min-w-full tw-bg-[#202124] text-white poppings-font">
                 <h4 className="tw-pt-[3rem] text-center tw-shadow-lg tw-font-extrabold txt-reg-requirement">REGISTRATION REQUIREMENTS</h4>
-                <Container className='grid-con-bg'>
+                <Container className=' bg-gradient tw-rounded-2xl'>
                     <h4 className="text-start txt-reg-requirement-2">Passport Photograph</h4>
                     <h4 className="text-start txt-reg-requirement-2">Registration/ID Card fee is part of the training
                         Tuition for DIPLOMA
@@ -23,16 +23,15 @@ function CertificationPrograms(props) {
             </Container>
 
             <Container className="mt-2 poppings-font">
-                <h5></h5>
-                <div className="mb-5 tw-shadow-lg grid-con-bg">
+                <div className="mb-5">
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold text-primary">
                             COMPUTER DIPLOMA PROGRAMS </h5>
                     </Container>
 
                     <div className="grid-container">
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Computer Appreciation</h6>
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Computer Appreciation</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -54,7 +53,7 @@ function CertificationPrograms(props) {
                         </div>
 
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Introduction to the Internet</h6>
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Introduction to the Internet</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -74,7 +73,7 @@ function CertificationPrograms(props) {
                                 </Table>
                             </Container>
                         </div>
-                        <div className="grid-item"><h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft Office Word</h6>
+                        <div className="grid-item"><h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Microsoft Office Word</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -96,7 +95,7 @@ function CertificationPrograms(props) {
                         </div>
 
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft Office Excel</h6>
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Microsoft Office Excel</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -117,7 +116,7 @@ function CertificationPrograms(props) {
                             </Container>
                         </div>
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office Power
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Microsoft office Power
                             Point</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
@@ -139,7 +138,7 @@ function CertificationPrograms(props) {
                             </Container>
                         </div>
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office Access</h6>
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Microsoft office Access</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -160,7 +159,7 @@ function CertificationPrograms(props) {
                             </Container>
                         </div>
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Microsoft office
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Microsoft office
                             Publisher</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
@@ -182,7 +181,7 @@ function CertificationPrograms(props) {
                             </Container>
                         </div>
                         <div className="grid-item">
-                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold !tw-text-blue-950">Corel Draw</h6>
+                            <h6 className="text-center tw-shadow-lg tw-py-4 tw-font-extrabold text-dark">Corel Draw</h6>
                             <Container>
                                 <Table className="border-primary border-2" striped bordered hover size="sm">
                                     <thead>
@@ -204,11 +203,12 @@ function CertificationPrograms(props) {
                         </div>
                     </div>
                 </div>
+                <hr/>
+                {/*End here*/}
 
-                <div className="mb-5 tw-shadow-lg grid-con-bg">
-                    <p className="text-center">WE PROVIDE THE MOST INNOVATIVE SKILLS NEEDED, TO GET YOU YOUR GOALS</p>
+                <div className="my-4">
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold text-primary">
                             PROFESSIONAL CERTIFICATION PROGRAM (Business/Accountancy/Statistics)
                         </h5>
                     </Container>
@@ -348,12 +348,13 @@ function CertificationPrograms(props) {
                         </div>
                     </div>
                 </div>
+                <hr/>
+                {/*End here*/}
 
-
-                <div className="mb-5 tw-shadow-lg grid-con-bg">
+                <div className="my-4">
                     <p className="text-center">CERTIFICATION PROGRAM (IT TECHNICIAN)</p>
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-font-bold text-primary">
                             PROFESSIONAL CERTIFICATION PROGRAM (Business/Accountancy/Statistics)
                         </h5>
                     </Container>
@@ -581,11 +582,12 @@ function CertificationPrograms(props) {
                         </div>
                     </div>
                 </div>
+                <hr/>
+                {/*End here*/}
 
-
-                <div className="mb-5 tw-shadow-lg !tw-rounded-1 grid-con-bg">
+                <div className="my-4">
                     <Container>
-                        <h5 className="text-center !tw-text-1xl !tw-font-bold tw-text-blue-900 glow">
+                        <h5 className="text-center !tw-text-1xl !tw-font-bold text-primary">
                             PROFESSIONAL CERTIFICATION PROGRAM (PROGRAMMING) </h5>
                     </Container>
 
@@ -832,6 +834,8 @@ function CertificationPrograms(props) {
 
                     </div>
                 </div>
+                <hr/>
+                {/*End here*/}
 
             </Container>
         </div>

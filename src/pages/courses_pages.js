@@ -9,11 +9,11 @@ import {Courses} from "@/components/Courses";
 
 function CoursesPage(props) {
     return (
-        <div className="course_page_img poppings-font">
+        <div className="">
             <Nav_Bar/>
-            <div>
+            <div className="poppings-font">
                 <Image
-                    className="banner-image position-relative tw-object-cover tw-mix-blend-overlay"
+                    className="banner-image position-relative tw-object-cover"
                     src={Banner}
                     alt="Banner"/>
 
@@ -30,23 +30,23 @@ function CoursesPage(props) {
                 </Container>
             </div>
 
-            <Container className="tw-mt-[60px] curriculum-con tw-rounded-2xl">
-                <div className='tw-shadow-lg'>
-                    <h3 className="text-center  my-title-course-page !tw-text-purple-950 tw-font-bold">
+            <Container className="tw-min-w-full tw-mt-[60px] curriculum-con poppings-font">
+                <div>
+                    <h3 className="text-center  my-title-course-page tw-text-slate-600 tw-font-bold">
                         BEMS INSTITUTE OF TECHNOLOGY AND VOCATIONAL STUDIES.
                     </h3>
-                    <h5 className="text-center my-title-course-page !tw-text-purple-950 tw-font-bold">
+                    <h5 className="text-center my-title-course-page tw-text-slate-600 tw-font-bold">
                         CURRICULUM FOR ALL COURSES OFFERED AT BITVs.</h5>
                 </div>
             </Container>
 
-            <div className=" position-relative top-0 bottom-100 ">
+            <div className=" position-relative top-0 bottom-100 poppings-font">
                 <Container >
                     {Courses.map((course, index) => (
                         <Table key={index} className="mb-5 tw-shadow-lg curriculum-con" striped bordered hover size="lg">
                             <thead>
                             <tr>
-                                <th className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold tw-text-blue-900 glow">{course.name}</th>
+                                <th className="text-center !tw-text-1xl !tw-drop-shadow-lg !tw-font-bold text-primary">{course.name}</th>
                             </tr>
                             </thead>
                             <tbody>

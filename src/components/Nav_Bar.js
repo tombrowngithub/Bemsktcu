@@ -13,15 +13,15 @@ export default function NavBar() {
     const [LoginModalShow, setLoginModalShow] = useState(false);
     const [SignUpModalShow, setSignUpModalShow] = useState(false);
     return (
-        <Navbar className="nav-bar-gradient-bg" expand="lg" variant="dark">
+        <Navbar className="tw-shadow-2xl tw-z-10" expand="lg" variant="white">
             <Container className="ms-0">
                 <Navbar.Brand className=" tw-font-bold">
-                    <Link className="text-decoration-none BITVs-pc my-title" href="/">
+                    <Link className="text-decoration-none BITVs-pc my-title text-primary" href="/">
                         Bems Institute of Technology and Vocational studies
                     </Link>
 
                     <Link className="text-decoration-none text-white BITVs-mb" href="/">
-                        <div className="d-flex align-items-center border-primary border-2">
+                        <div className="d-flex align-items-center">
                             BITVs
                             <Image
                                 src={BKTC_logo}
@@ -34,7 +34,7 @@ export default function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <div className="vl d-none d-md-block"></div>
-                        <NavDropdown className="tw-font-bold" menuVariant="dark" title="Benefits"
+                        <NavDropdown className="tw-font-bold" menuVariant="light" title="Benefits"
                                      id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
                                 Scholarship programs
@@ -51,7 +51,7 @@ export default function NavBar() {
                         </NavDropdown>
 
                         <div className="vl d-none d-md-block"></div>
-                        <NavDropdown menuVariant="dark" title="All Courses"
+                        <NavDropdown className="tw-font-bold" menuVariant="light" title="All Courses"
                                      id="basic-nav-dropdown">
 
                             {/*ALL COURSES DROPDOWN*/}
@@ -60,7 +60,7 @@ export default function NavBar() {
                         </NavDropdown>
 
                         <div className="vl d-none d-md-block"></div>
-                        <NavDropdown menuVariant="dark" className="tw-font-bold" title="Free Tutorials"
+                        <NavDropdown menuVariant="light" className="tw-font-bold" title="Free Tutorials"
                                      id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
                                 IT Fundamental Tutorial
@@ -85,7 +85,7 @@ export default function NavBar() {
                         <div className="d-flex flex-col md:flex-row md:items-center !tw-ml-40">
                             <div className="vl d-none d-md-block"></div>
                             <Nav.Link
-                                className=" !tw-text-white !tw-font-bold d-flex align-items-center"
+                                className=" text-primary !tw-font-bold d-flex align-items-center"
                                 onClick={() => setLoginModalShow(true)}
                             >
                                 <ArrowRightOnRectangleIcon width={"18px"}/>
@@ -96,7 +96,7 @@ export default function NavBar() {
 
                             <Nav.Link
                                 onClick={() => setSignUpModalShow(true)}
-                                className="!tw-text-white !tw-font-bold sign-up-text"
+                                className="text-primary !tw-font-bold sign-up-text"
                             >
                                 Apply!
                             </Nav.Link>

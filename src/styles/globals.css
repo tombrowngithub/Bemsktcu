@@ -26,11 +26,10 @@
 
 .my-title {
     font-family: 'Tilt Prism', cursive !important;
-    color: white;
 }
 
 .my-title-course-page {
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Poppins', sans-serif;
     position: relative;
     font-size: 1.6em;
 }
@@ -82,9 +81,7 @@
     -webkit-border-top-left-radius: 1rem;
 }
 
-.nav-bar-gradient-bg {
-    background: linear-gradient(300deg, #141517, #343656, #5f628a,#5f628a,#5f628a);
-}
+
 
 .landing-page {
     background: linear-gradient(45deg, #333333, #1fef) !important;
