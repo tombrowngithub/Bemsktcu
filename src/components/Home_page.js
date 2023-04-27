@@ -28,7 +28,8 @@ export default function Home_page() {
                 <Image
                     src={BKTC_logo}
                     alt="Logo"
-                    className=" mx-auto mx-md-0 my-2 my-md-0 tw-w-[20rem] tw-absolute tw-top-0 tw-right-0 BKTC_logo"/>
+                    className=" mx-auto mx-md-0 my-2 my-md-0 tw-w-[20rem]
+                    tw-absolute tw-top-0 tw-right-0 BKTC_logo"/>
                 <div className="tw-bg-[#179bd7] tw-bg-con ">
                     <Container>
                         <Row className="justify-content-center">

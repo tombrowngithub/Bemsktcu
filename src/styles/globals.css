@@ -191,6 +191,7 @@
     }
 
     .BKTC_logo {
+        display: none;
         width: 18rem;
     }
 

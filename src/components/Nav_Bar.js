@@ -20,13 +20,13 @@ export default function NavBar() {
                         Bems Institute of Technology and Vocational studies
                     </Link>
 
-                    <Link className="text-decoration-none text-white BITVs-mb" href="/">
+                    <Link className="text-decoration-none text-primary BITVs-mb" href="/">
                         <div className="d-flex align-items-center">
                             BITVs
                             <Image
                                 src={BKTC_logo}
                                 alt="Logo"
-                                className="tw-w-[7rem]"/>
+                                className="tw-w-[8rem]"/>
                         </div>
                     </Link>
                     </Navbar.Brand>
@@ -76,7 +76,7 @@ export default function NavBar() {
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item >
-                                <Link className="text-decoration-none text-white" href="/certification_programs">
+                                <Link className="text-decoration-none text-primary" href="/certification_programs">
                                     View all our certification program
                                 </Link>
                             </NavDropdown.Item>

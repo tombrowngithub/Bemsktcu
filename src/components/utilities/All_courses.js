@@ -58,7 +58,7 @@ function AllCourses(props) {
             </NavDropdown.Item>
             <NavDropdown.Divider/>
             <NavDropdown.Item >
-                <Link className="text-decoration-none text-white" href="/courses_pages">
+                <Link className="text-decoration-none text-primary" href="/courses_pages">
                     VIEW ALL AVAILABLE COURSES
                 </Link>
             </NavDropdown.Item>
